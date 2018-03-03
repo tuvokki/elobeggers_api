@@ -16,7 +16,7 @@ services:
   - postgresql
 before_script:
 # Create the test database
-- cp config/text.exs.travis config/test.exs
+- cp config/test.exs.travis config/test.exs
 - psql -c 'create database elobeggers_api_test;' -U postgres
 before_install:
   - sudo apt-get update
